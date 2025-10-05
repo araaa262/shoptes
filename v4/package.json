@@ -1,0 +1,50 @@
+{
+    "name": "telebotshop",
+    "version": "1.0.0",
+    "description": "Telegram bot shop with Tripay payment integration",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "nodemon src/index.js",
+        "test": "jest",
+        "setup": "node scripts/sampleData.js",
+        "sample-data": "node scripts/sampleData.js",
+        "reset-db": "node scripts/resetDatabase.js",
+        "init": "node start.js",
+        "test:stock": "node scripts/testStock.js",
+        "test:payment": "node scripts/testPayment.js",
+        "test:bot-payment": "node scripts/testBotPayment.js",
+        "test:signature": "node scripts/testSignature.js",
+        "test:payment-config": "node scripts/testPaymentMethodConfig.js",
+        "test:add-product": "node scripts/testAddProduct.js"
+    },
+    "dependencies": {
+        "axios": "^1.6.0",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.20.2",
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.5",
+        "crypto": "^1.0.1",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "fs-extra": "^11.1.1",
+        "jsonwebtoken": "^9.0.2",
+        "multer": "^1.4.5-lts.1",
+        "node-telegram-bot-api": "^0.64.0",
+        "sqlite3": "^5.1.6",
+        "uuid": "^9.0.1"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "nodemon": "^3.0.1"
+    },
+    "keywords": [
+        "telegram",
+        "bot",
+        "shop",
+        "payment",
+        "tripay"
+    ],
+    "author": "",
+    "license": "MIT"
+}
